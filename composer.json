@@ -1,0 +1,15 @@
+{
+  "name": "czipp/328pt2/week6",
+  "description": "Week 6 Templating project",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Cameron Zipp",
+      "email": "Zipp.Cameron@student.greenriver.edu"
+    }
+  ],
+  "require": {
+    "bcosca/fatfree-core": "dev-master"
+  }
+}
