@@ -2,9 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Info</title>
+    <title>{{ @title }}</title>
 </head>
 <body>
-  <h1>Practicing Templating</h1>
+    <h1>{{ @title }}</h1>
+    <p>User logged in as {{ @username }} using {{ @password }}</p>
+    <p>I like the color {{ @color }}</p>
+
+    <h3>Fruits</h3>
+    <ul>
+        <repeat group="{{ @fruits }}" value="{{ @fruit }}">
+            <li>{{ @fruit }}</li>
+        </repeat>
+    </ul>
+
+    <h3>Dessert Options</h3>
+        <repeat group="{{ @desserts }}" key="{{ @key }}" value="{{ @value }}">
+            <checkbox value="{{ @key }}">{{ @value }}</checkbox>
+        </repeat>
+
+    <h3>Colors</h3>
+    <repeat group="{{ @colors }}" value="{{ @color }}">
+
+        <input type="radio" id="colors" name="fav_language" value="{{ @color }}">
+        <label for="colors">{{ @color }}</label><br>
+    </repeat>
+
 </body>
 </html>
