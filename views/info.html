@@ -24,8 +24,8 @@
     <h3>Colors</h3>
     <repeat group="{{ @colors }}" value="{{ @color }}">
 
-        <input type="radio" id="colors" name="fav_language" value="{{ @color }}">
-        <label for="colors">{{ @color }}</label><br>
+        <label><input type="radio" name="fav_language" value="{{ @color }}">{{ @color }}</label><br>
+
     </repeat>
 
 </body>
